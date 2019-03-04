@@ -13,7 +13,9 @@ These computations can either be run with the GUI or simply by typing.
 Allowed keypresses:
 0 - 9, Backspace, Delete, Escape, ^, (, ), +, -, /, \*
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Working demo:
+
+Check out a working version of the calculator [here](https://calculator-cees.herokuapp.com/)
 
 ## Available Scripts
 
