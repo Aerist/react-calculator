@@ -37,7 +37,7 @@ const Button = props => {
 Button.propTypes = {
   onClick: PropTypes.func.isRequired,
   value: PropTypes.string.isRequired,
-  label: PropTypes.string.isRequired,
+  label: PropTypes.oneOfType([PropTypes.string, PropTypes.object]).isRequired,
   index: PropTypes.number.isRequired,
 };
 export default Button;
