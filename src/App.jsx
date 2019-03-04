@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-one-expression-per-line */
 import React, { Component } from 'react';
 
 import Button from './Button';
@@ -21,11 +22,6 @@ class App extends Component {
     this.handleClick = this.handleClick.bind(this);
     this.handleKeyPress = this.handleKeyPress.bind(this);
     this.checkKeyPress = React.createRef();
-  }
-
-  componentDidMount() {
-    // window.addEventListener('keydown', this.handleKeyPress);
-    // console.log(this.checkKeyPress);
   }
 
   handleCalculations(event, value, keyPress) {
@@ -88,7 +84,14 @@ class App extends Component {
     const buttonValues = [
       { label: 'clear', value: 'C' },
       { label: '/', value: '/' },
-      { label: '^2', value: '^' },
+      {
+        label: (
+          <span>
+            x<sup>y</sup>
+          </span>
+        ),
+        value: '^',
+      },
       { label: '&#x221A', value: 'sqrt' },
       { label: '7', value: '7' },
       { label: '8', value: '8' },

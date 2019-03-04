@@ -5,8 +5,10 @@ export const CalculatorContainer = styled.div`
 `;
 
 export const AppContainer = styled.div`
-  max-width: 360px;
+  max-width: 240px;
   margin: 0 auto;
+  position: relative;
+  margin-top: 250px;
 `;
 
 export const ButtonContainer = styled.div`
@@ -16,4 +18,6 @@ export const ButtonContainer = styled.div`
 
 export const ResultContainer = styled.div`
   border: 1px solid black;
+  background-color: #fff;
+  padding: 10px;
 `;

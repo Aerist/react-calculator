@@ -19,11 +19,4 @@ describe('Button', () => {
     const wrapper = shallow(<Button {...props} />);
     expect(wrapper.find('.calculator-button')).to.have.lengthOf(1);
   });
-  // it('should return the value of the button pressed', () => {
-  //   // const mockClick = jest.fn().mockReturnValue('7');
-  //   // const mockKeyDown = jest.fn.mockReturnValue('7');
-  //   // const button = { label: '7', value: '7', mockClick, mockKeyDown };
-  //   // const wrapper = shallow(<Button {...button} />);
-  //   expect()
-  // });
 });

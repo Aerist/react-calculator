@@ -7,6 +7,16 @@ const StyledButton = styled.button`
   background-color: ${props => (props.index === -1 ? '#f1894f' : '#474a59')};
   color: #fff;
   border-color: ${props => (props.index === -1 ? '#f1894f' : '#474a59')};
+  min-height: 75px;
+  border: 0px;
+  &:active {
+    border: 1px solid #fff;
+    text-decoration: none;
+  }
+  &:focus {
+    border: 1px solid #fff;
+    text-decoration: none;
+  }
 `;
 const Button = props => {
   const { onClick, value, label, index } = props;
