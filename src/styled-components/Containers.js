@@ -9,6 +9,9 @@ export const AppContainer = styled.div`
   margin: 0 auto;
   position: relative;
   margin-top: 250px;
+  @media (max-width: 700px) {
+    margin-top: 50px;
+  }
 `;
 
 export const ButtonContainer = styled.div`
